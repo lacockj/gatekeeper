@@ -10,12 +10,12 @@ Discourage the direct download of certain files by only allowing access through 
 5. When refering to protected files in your HTML, do not include the file's path, only it's name. The gatekeeper is already looking in the file vault folder.
 
 <pre>
-<body>
+&lt;body>
   <audio>
     <source class="protected-source" type="audio/mpeg" data-src="abcdefg.mp3">
   </audio>
-</body>
-<script>
+$lt;/body>
+$lt;script>
 keymaster = new namespace.Keymaster();
 
 activateProtectedSources = function(){
@@ -30,5 +30,5 @@ activateProtectedSourcesPartTwo = function( response ){
 }
 
 activateProtectedSources();
-</script>
+&lt;/script>
 </pre>
