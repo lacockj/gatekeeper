@@ -1,6 +1,7 @@
-if (typeof stmastering === 'undefined') stmastering = {};
+// Your Namespace //
+if (typeof namespace === 'undefined') namespace = {};
 
-stmastering.Keymaster = function(){
+namespace.Keymaster = function(){
   this.getFileToken = function( fileName, callback, bindToThis ){
     if (bindToThis) {
       $.get('api/gatekeeper.php', {file: fileName}, callback.bind(bindToThis), 'json')

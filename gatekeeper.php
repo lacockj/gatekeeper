@@ -5,7 +5,7 @@ require_once('common.php');
 # Settings #
 $window = 2; # seconds #
 $maxAge = 1800; # seconds #
-$vault = $_SERVER['DOCUMENT_ROOT'] . "/AI/GeoHunt/vault/";
+$vault = $_SERVER['DOCUMENT_ROOT'] . "/vault/";
 
 # Request #
 $getFile = pathinfo(_get('file'));
