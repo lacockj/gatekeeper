@@ -11,11 +11,11 @@ Discourage the direct download of certain files by only allowing access through 
 
 <pre>
 &lt;body>
-  <audio>
-    <source class="protected-source" type="audio/mpeg" data-src="abcdefg.mp3">
-  </audio>
-$lt;/body>
-$lt;script>
+  &lt;audio>
+    &lt;source class="protected-source" type="audio/mpeg" data-src="abcdefg.mp3">
+  &lt;/audio>
+&lt;/body>
+&lt;script>
 keymaster = new namespace.Keymaster();
 
 activateProtectedSources = function(){
